@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user registration</title>
+    <link rel="stylesheet" href="css/myStyle.css">
+    <!--style>
+        h1 { color: chartreuse;
+             text-align: right;
+           }
+    </style-->
+</head>
+<body>
+    <header><h1 style="text-align: center">Nutzer Registration</h1></header>
+    <main>
+        <form action=""
+              method="get"
+              name="user-registration">
+            <!--label for="vname">
+                Vorname:<br>
+                <input type="text" id="vname"
+                       name="vname" placeholder="Vorname"
+                       size=10 maxlength=10 minlength="5"
+                       required>
+            </label><br>
+            <label for="name">
+                Name:<br>
+                <input type="password" id="name"
+                       name="name" value="Müller">
+            </label><br>
+            <label for="url">
+                Webseite:<br>
+                <input type="url" id="url"
+                       name="url">
+            </label><br>
+            <label for="email">
+                Email-Adresse:<br>
+                <input type="email" id="email"
+                       name="email">
+                <!--  
+                    [a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*
+                -->
+            <!--/label><br>
+            <label for="alter">
+                Alter:<br>
+                <input type="range" id="alter"
+                       name="alter" min=10 max=100 value=80
+                       step=5>
+            </label><br>
+            <label for="payment-field">Zahlungsmethode: <br>
+                <fieldset id="payment-field">
+                    <label for="master">Mastercard
+                        <input type="radio" name="payment" 
+                        value="master" id="master" checked>
+                    </label><br>
+                    <label for="visa">Visa
+                        <input type="radio" name="payment" value="visa" id="visa">
+                    </label><br>
+                    <label for="amex">American  Express
+                        <input type="radio" name="payment" value="amex" id="amex">
+                    </label>
+                </fieldset>
+            </label-->
+            <legend for="intrests">Interessen: <br>
+                <fieldset id="intrests" disabled>
+                    <label for="lesen">Lesen
+                        <input type="checkbox" name="inter" 
+                        value="1" id="lesen" checked>
+                    </label><br>
+                    <label for="netflix">Netflix
+                        <input type="checkbox" name="inter" value="2" id="netflix">
+                    </label><br>
+                    <label for="garten">Gartenarbeit
+                        <input type="checkbox" name="inter" 
+                        value="3" id="garten" checked>
+                    </label><br>
+                </fieldset>
+            </legend>
+            <br>
+            <label for="datei">Foto:<br>
+                <input type="file" name="profilbild" 
+                id="datei" enctype="multipart/form-data"
+                accept="">
+            </label><br>
+            <h1>Eine zweite Überschrift</h1>
+            <label for="farbe">Auwählen:<br>
+                <input type="color" name="farbe" 
+                id="farbe">
+            </label><br>
+            <label for="datum">Geburtstag:<br>
+                <input type="date" name="datum" 
+                id="datum">
+            </label><br>
+            <label for="marke">Automarke:<br>
+                <select name="marke" id="marke"
+                  multiple size=2>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Chrysler</option>
+                    <option value="4">Dacia</option>
+                </select>
+            </label><br>
+            <input type="submit" value="Senden">&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Zurücksetzen">
+        </form>
+    </main>
+</body>
+</html>

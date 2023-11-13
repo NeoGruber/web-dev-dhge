@@ -1,0 +1,100 @@
+header {
+  background-color: darkblue;
+}
+
+h3 {
+  text-align: center;
+  color: darkgoldenrod;
+}
+
+nav {
+  background-color: lightpink;
+}
+
+main {
+  background-color: lightsteelblue;
+}
+
+aside {
+  background-color:palegreen;
+}
+
+footer {
+  background-color: orangered;
+}
+
+.news {
+  border: blue 2px solid;
+  text-align: right;
+}
+
+/*
+#interessen {
+  color: beige;
+}
+*/
+
+h3 {
+  text-align: left;
+}
+
+[type=checkbox] {
+  width: 40px;
+  height: 40px;
+}
+
+[checked] {
+  width: 30px;
+  height: 30px;
+}
+
+nav a, a.menue:visited, a.menue:active  {
+  text-decoration: none;
+  color : black;
+  font-weight: bold;
+  cursor:context-menu;
+} 
+
+p>em {
+  color: green;
+}
+
+p b {
+  text-decoration: underline;
+}
+
+p~em {
+  color: blueviolet;
+}
+
+nav ul {
+  list-style: none;
+}
+
+#download-header {
+  color: red;
+  text-align: center;
+}
+
+#download-list {
+  list-style: none;
+  font-size: 1.3em;
+}
+
+#download-list li {
+  border: 1px black solid;
+  
+}
+
+
+
+#download-list [pdf]::before {
+  
+  content: url(../pics/PDF.png);
+}
+
+#download-list [xls]::before {
+  content: url("../pics/test.png");
+}
+
+

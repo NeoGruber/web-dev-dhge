@@ -1,0 +1,46 @@
+<h1>Heading 1</h1> <!--Überschrift, h1 bis h6-->
+<h2>Heading 2</h2> <!--und ummer so weiter...-->
+
+<!--href beschreibt den pfad, entweder link oder datei.-->
+<a href="https://google.com">google</a> <!--link element-->
+<a href="./basicHtmlStructure.html" target="_top" >basics</a>
+<!-- target: wie die seite geöffnet werden soll
+_blank 	Opens document in a new window or tab
+_self 	Opens document in the same frame (default)
+_parent Opens document in the parent frame
+_top 	Opens document in the full body of the window-->
+
+<ul> <!--ungeordnetes listenelement (stichpunkte)-->
+    <li>list element</li>
+</ul>
+
+<ol> <!--geordnetes listenelement (nummerierung)-->
+    <li>list element</li>
+</ol>
+
+<nav> <!--sammlung von navigations links-->
+    <a href="">link1</a>
+    <a href="">link2</a>
+</nav>
+
+<img src="./bild.png" alt="ein bild" 
+    usemap="#workmap" width="500", height="500"> <!--Bild/(Map)
+src     definiert den pfad zum bild, auch links
+alt     alternativer text
+height  höhe des bildes
+width   breite des bildes
+usemap  definieren, ob man eine map/karte verwendet
+-->
+<map name="workmap">
+    <area shape="rect" coords="34,44,270,350" 
+        alt="Computer" href="computer.html">
+    <area shape="circle" coords="337,300,44" 
+        alt="Cup of coffee" href="coffee.html">
+</map>
+
+<article> <!--wiederverwendbarer Teil einer Seite, ist unabhängig-->
+    <h2>Heading</h2>
+    <p>content</p>
+    <!--... es kann auch alles mögliche hier rein:
+    header, main, footer, aside, h1... alles!-->
+</article>

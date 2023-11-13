@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabellen in HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Tabellen in HTML 5</h1>
+    </header>
+    <main>
+        <table border="1">
+            <caption>Spielplan der U14</caption>
+            <thead>
+                <tr>
+                    <th>Spieltag</th> <th>Heim</th>
+                    <th>Gast</th> <th>Ergebnis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>25.10.23</th> <td>USV Jena</td>
+                    <td>Gera Zwötzen</td> <td rowspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>30.10.23</th> <td>Zeulenroda</td>
+                    <td>Greiz</td>
+                </tr>
+                <tr>
+                    <th>11.11.23</th> <td>Weida</td>
+                    <td>Ronneburg</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Alle Ergebnisse ohne Garantie</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,112 @@
+:root {
+  --viewport-height: 650px;
+}
+
+#particle {
+  width: 10px;
+  height: 10px;
+  border-radius: 2em;
+  background-color: white;
+  opacity: .6;
+
+  position: absolute;
+  left: 300px;
+  animation: falling 25s ease-in-out infinite;
+}
+
+body {
+  /*background-color: lightgrey;*/
+  background-image: url(../pics/rockyBG.jpg);
+  position: relative;
+}
+
+@keyframes falling {
+  0% {
+    top: -5px;
+  }
+
+  1% {
+    left: 293px;
+  }
+
+  3% {
+    left: 288px;
+  }
+
+  4% {
+    left: 285px;
+  }
+
+  6% {
+    left: 283px;
+  }
+
+  8% {
+    left: 282px;
+  }
+
+  10% {
+    left: 280px;
+  }
+
+  12% {
+    left: 275px;
+  }
+
+  15% {
+    left: 271px;
+  }
+
+  18% {
+    left: 268px;
+  }
+
+  21% {
+    left: 264px;
+  }
+
+  24% {
+    left: 262px;
+  }
+
+  26% {
+    left: 260px;
+  }
+
+  40% {
+    left: 260px;
+  }
+
+  41% {
+    left: 240px;
+  }
+
+  55% {
+    left: 240px;
+  }
+
+  58% {
+    left: 330px;
+  }
+
+  70% {
+    left: 330px;
+  }
+
+  72% {
+    left: 280px;
+  }
+
+  80% {
+    left: 280px;
+  }
+
+  83% {
+    left: 300px;
+  }
+
+  100% {
+    top: var(--viewport-height);
+    left: 300px;
+  }
+}

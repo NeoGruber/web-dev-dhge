@@ -1,0 +1,44 @@
+body {
+    width: 500px;
+    margin: 1em auto;
+    color: rgb(20, 20, 20);
+    position: relative;
+}
+
+#ausgabe {
+    position: absolute;
+    top: 260px;
+    left: 0px;
+    border: 3px solid red;
+    background-color: green;
+    visibility: hidden;
+    width: 100px;
+    border-radius: 1em;
+    padding: .5em;
+    text-align: center;
+}
+
+.styled-input {
+    margin: 1em 0;
+    position: relative;
+}
+
+.styled-input label {
+    position: absolute;
+    top: .9em;
+    left: .5em;
+    background-color: #fff;
+    padding: 0 .5em;
+    font-size: .8em;
+    transition: all .2s linear;
+}
+
+.styled-input input {
+    padding: .5em;
+}
+
+.styled-input label.like-placeholder {
+    color: #666;
+    font-size: 1em;
+    top: 1.6em;
+}

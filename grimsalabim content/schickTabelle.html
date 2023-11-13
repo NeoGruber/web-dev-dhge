@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eine responsive Tabelle</title>
+    <link rel="stylesheet" href="css/tableStyle.css">
+</head>
+<body>
+    <h1>Tabell mit CSS formatieren</h1>
+
+    <table id="die-tabelle">
+        <caption>Berühmte Perönlichkeiten</caption>
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Name</th>
+                <th scope="col">Vorname</th>
+                <th scope="col">PLZ</th>
+                <th scope="col">Ort</th>
+                <th scope="col">Straße Nr.</th>
+                <th scope="col">Geburtstag</th>
+                <th scope="col">Geburtsort</th>
+                <th scope="col">Gattung</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1.</th>
+                <td>Grimm</td>
+                <td>André</td>
+                <td>07546</td>
+                <td>Gera</td>
+                <td>Weg der Freundschaft 4</td>
+                <td>12.12.2011</td>
+                <td>Gera</td>
+                <td>Mensch</td>
+            </tr>
+            <tr>
+                <th scope="row">2.</th>
+                <td>Beutlin</td>
+                <td>Frodo</td>
+                <td>4711</td>
+                <td>Beutlingen</td>
+                <td>Beutelsend</td>
+                <td>22.09.2968</td>
+                <td>Beutelsend</td>
+                <td>Hobbit</td>
+            </tr>
+            <tr>
+                <th scope="row">3.</th>
+                <td>Potter</td>
+                <td>Harry</td>
+                <td>WC1N</td>
+                <td>Little Whinging</td>
+                <td>Ligusterweg 4</td>
+                <td>31.07.1980</td>
+                <td>London</td>
+                <td>Zauberer</td>
+            </tr>
+            <tr>
+                <th scope="row">4.</th>
+                <td>Arbuckle</td>
+                <td>Jon</td>
+                <td>83860</td>
+                <td>Sagle</td>
+                <td>Bottle By Road 25</td>
+                <td>28.07.1951</td>
+                <td>Farm</td>
+                <td>Mensch</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="table-footer" colspan="9">erstellt 20.10.2023</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

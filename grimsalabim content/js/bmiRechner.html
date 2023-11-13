@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Rechner</title>
+    <link rel="stylesheet" href="../css/bmi.css">
+</head>
+
+<body>
+    <h1>Berechnung des Body-Mass-Index</h1>
+    <p>Bitte geben Sie ihre Größe in m und ihr Gewicht in kg ein!</p>
+    <div class="styled-input">
+        <label for="groesse">Größe</label>
+        <br>
+        <input type="text" id="groesse">
+    </div>
+    <div class="styled-input">
+        <label for="masse">Gewicht</label>
+        <br>
+        <input type="text" id="masse">
+    </div>
+    <input type="button" value="Rechne!" onclick="calcBMI()">
+    <div id="ausgabe"></div>
+
+    <script src=bmi.js></script>
+</body>
+
+</html>

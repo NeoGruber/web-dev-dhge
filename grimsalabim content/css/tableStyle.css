@@ -1,0 +1,137 @@
+h1 {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: bisque;
+    color: rgb(2, 66, 2);
+    padding: .3em 1em;
+    max-width: 85vw;
+}
+
+#die-tabelle,
+#die-tabelle td,
+#die-tabelle th {
+    border: 1px solid black;
+    border-collapse: separate;
+    /*border-spacing: 10px;*/
+}
+
+#die-tabelle thead {
+    background-color: rgb(161, 29, 29);
+    color: rgb(252, 210, 210);
+    text-align: left;
+}
+
+#die-tabelle [scope=row] {
+    color: rgb(2, 66, 2);
+}
+
+#die-tabelle td,
+#die-tabelle th {
+    padding: 4px 12px;
+}
+
+#die-tabelle tbody td {
+    box-shadow: rgb(163, 168, 173) 5px 0 5px inset;
+    border-radius: 3px;
+}
+
+#die-tabelle tfoot {
+    background-color: rgb(161, 29, 29);
+    color: lightpink;
+    text-align: right;
+}
+
+#die-tabelle {
+    caption-side: bottom;
+    max-width: 80vw;
+    margin: 1em auto;
+}
+
+#die-tabelle caption {
+    text-align: left;
+    margin-top: .2em;
+}
+
+#die-tabelle tr:nth-child(even) {
+    background-color: rgb(167, 174, 184);
+}
+
+#die-tabelle tbody tr:hover {
+    background-color: lightsalmon;
+    /*font-weight: bold;*/
+    cursor: pointer;
+    transition: background-color .5s linear;
+}
+
+@media (max-width: 950px) {
+    #die-tabelle {
+        border-collapse: collapse;
+        margin: 1em 0;
+        max-width: 100vw;
+        /*transition: 1s all;*/
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #die-tabelle th,
+    #die-tabelle td {
+        padding: 2px 4px;
+    }
+}
+
+@media (max-width: 600px) {
+    #die-tabelle tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #die-tabelle thead {
+        display: none;
+    }
+
+    td:nth-child(2)::before {
+        content: "Name: ";
+        font-weight: bold;
+    }
+
+    td:nth-child(3)::before {
+        content: "Vorname: ";
+        font-weight: bold;
+    }
+
+    td:nth-child(4)::before {
+        content: "PLZ: ";
+        font-weight: bold;
+    }
+
+    td:nth-child(5)::before {
+        content: "Ort: ";
+        font-weight: bold;
+    }
+
+    td:nth-child(6)::before {
+        content: "Straße: ";
+        font-weight: bold;
+    }
+
+    td:nth-child(7)::before {
+        content: "Geb-Tag: ";
+        font-weight: bold;
+    }
+
+    td:nth-child(8)::before {
+        content: "Geb-Ort: ";
+        font-weight: bold;
+    }
+
+    td:nth-child(9)::before {
+        content: "Gattung: ";
+        font-weight: bold;
+    }
+}

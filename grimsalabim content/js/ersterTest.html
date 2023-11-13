@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallo JavaScript</title>
+    <script src="meinScript.js"></script>
+    <noscript>
+        Kein JavaScript aktiviert!
+    </noscript>
+</head>
+<body>
+    7+3=<script>document.write(7+3);</script>
+    <br>
+    Anzahl Schuhe im Haus: 
+    <script>
+        'use strict'    //strenger Modus
+        /* 
+        Kommentar über
+        mehrere Zeilen
+        */
+        let anzahlFaecher   = 8;
+        let paareJeFach     = 5;
+        let paareNebenRegal = 6;
+        let paareGesamt     = paareJeFach*anzahlFaecher + paareNebenRegal;
+        let anzahlSchuhe    = paareGesamt * 2;
+        document.write(anzahlSchuhe);
+    </script>
+    <br>
+    Jedes Paar muss 
+    <script>
+      const TAGE_IM_JAHR = 365;
+      document.write((TAGE_IM_JAHR/paareGesamt).toFixed(4));
+    </script>
+    mal getragen werden. <br>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model</title>
+
+    <style>
+        body {
+            position: relative;
+            width: 70vw;
+            text-align: center;
+            margin: 1em auto;
+        }
+
+        b {
+            position: absolute;
+            border: 10px black solid;
+            margin: 10px;
+            padding: .5em;
+
+            background-color: aquamarine;
+            top: 120px;
+            left: 70px;
+        }
+
+        em {
+            display: block;
+        }
+
+        header {
+            /*border:cornflowerblue 3px solid;*/
+            padding: 1em 2em 1em 3em;
+            border-radius: 3em 3em 0 0;
+            background-color: rgb(219, 204, 172);
+        }
+
+        nav {
+            background-color: rgb(219, 204, 172);
+            padding: 1em 0;
+        }
+
+        nav>ul {
+            margin: 0;
+        }
+
+        main {
+            background-color: rgb(219, 204, 172);
+            height: 30vh;
+        }
+
+        footer {
+            background-color: rgb(219, 204, 172);
+            height: 100px;
+            border-radius: 0 0 3em 3em;
+        }
+
+        .main-menu {
+            display: inline;
+        }
+
+        .main-menu::after {
+            content: " |";
+        }
+
+        .main-menu:last-child::after {
+            content: "";
+        }
+
+        li.main-menu {
+            position: relative;
+        }
+
+        li.main-menu:hover>ul {
+            display: block;
+        }
+
+        .sub-menu {
+            display:none;
+            position: absolute;
+            top: 1em;
+            left: -40px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: cornflowerblue;
+        }
+
+        nav a:visited {
+            color: cornflowerblue;
+        }
+
+        #hallo {
+            background-color: burlywood;
+            top: 100px;
+            left: 50px;
+        }
+
+        #hallo:hover {
+            z-index: 3;
+        }
+
+        #main-header {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 15px;
+            margin-bottom: 0;
+            padding-left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(86, 146, 58);
+        }
+
+        #main-logo {
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <!--b id="hallo">Hallo</b>
+    <b>Welt</b-->
+
+    <header>
+        <img id="main-logo" src="pics/DHGE-Logo.png" 
+             alt="Logo der DHGE"
+             title="Logo der DHGE"
+             width="200px">
+        <h1 id="main-header">Webseite der DHGE</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="main-menu">
+                <a href="test.html">Element1</a>
+                <ul class="sub-menu">
+                    <li>Sub1</li>
+                    <li>Sub2</li>
+                    <li>Sub3</li>
+                </ul>
+            </li>
+            <li class="main-menu"><a href="test.html">Element2</a></li>
+            <li class="main-menu"><a href="test.html">Element3</a></li>
+            <li class="main-menu"><a href="test.html">Element4</a></li>
+        </ul>
+    </nav>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
