@@ -1,0 +1,30 @@
+/*CSS = Cascading Stylesheet*/
+
+/*zugriff auf diese elemente:*/
+/*<div class="my-class" id="my-id">hello world</div>*/
+/*<img>*/
+/*<div class="navigation-bar"><a href="#">link</a></div>*/
+/*<div><p>this is a paragraph</p></div>*/
+.my-class { }/*auf klasse zugreifen*/
+#my-id { } /*auf id zugreifen*/
+img {} /*auf html element zugreifen*/
+.navigation-bar a {} /*auf alle links in navigation-bar klasse zugreifen*/
+div > p { } /*auf alle children p von div zugreifen*/
+
+/*pseudo klassen*/
+ /* unvisited link */
+ a:link {
+  color: #FF0000;
+}
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+/* selected link */
+a:active {
+  color: #0000FF;
+} 
