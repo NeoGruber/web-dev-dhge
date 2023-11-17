@@ -28,3 +28,40 @@ a:hover {
 a:active {
   color: #0000FF;
 } 
+/* hier ein paar layouts */
+/* flexbox */
+.zeile {
+  display: flex;
+  flex-direction: row;
+  /*
+  Flex-wrap: Elemente rutschen in die nächste Zeile, wenn der Platz nicht mehr ausreicht. 
+  In der nächsten Zeile nutzen diese dann den vollen Platz (wenn das nicht gewünscht ist grid benutzen).
+  */
+  flex-wrap: wrap;
+}
+.spalte {
+  display: flex;
+  flex-direction: column;
+}
+/* grid */
+.grid-container-1{
+  display: grid;
+  /* 
+  Auch hier gibt es Zeilen und Spalten, nur werden sie im Vorhinein fest definiert.
+  Im hier definierten Beispiel gibt es 3 Spalten und 4 Zeilen. 
+  Die letzte Zeile und Spalte passt sich automatisch dem Inhalt an.
+  */
+  grid-template-columns: 200px 200px ;
+  grid-template-rows: 200px 100px 100px auto;
+  /* Zeilenabstand von 10px und Spaltenabstand von 20px */
+  gap: 10px 20px;
+}
+  /* wir können auch Elemente auch über mehrere Zellen strecken */
+  #grid-child-1 {
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start ;
+  }
+  #grid-child-2 {
+    grid-column: col3-start ;
+    grid-row: row1-start / row2-end;
+  }
